@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import styles from './Noticia.module.css';
 
 const Noticia = ({ noticia }) => {
 
@@ -14,7 +15,7 @@ const Noticia = ({ noticia }) => {
 
     return (
         <div className="col s12 m6 l6">
-            <div className="card">
+            <div className={`card ${styles.card_content}`}>
                 {imagen}
                 <div className="card-content">
                     <h5>{title}</h5>
